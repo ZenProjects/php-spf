@@ -51,10 +51,12 @@ typedef struct _spf_response_object {
 	SPF_response_t *spf_response;
 } php_spf_response_object;
 
-zend_object_value create_spf_response(zend_class_entry *class_type TSRMLS_DC);
+//zend_object_value create_spf_response(zend_class_entry *class_type TSRMLS_DC);
+zend_object *create_spf_response(zend_class_entry *class_type TSRMLS_DC);
 void free_spf_response(void *object TSRMLS_DC);
 
-zend_object_value create_spf(zend_class_entry *class_type TSRMLS_DC);
+//zend_object_value create_spf(zend_class_entry *class_type TSRMLS_DC);
+zend_object* create_spf(zend_class_entry *class_type TSRMLS_DC);
 void free_spf(void *object TSRMLS_DC);
 
 PHP_MINIT_FUNCTION(spf);
